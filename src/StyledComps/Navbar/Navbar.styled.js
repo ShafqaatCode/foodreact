@@ -63,7 +63,7 @@ export const NavLinks = styled.ul`
 export const NavLinkItem = styled.li`
   a {
     text-decoration: none;
-    color: #111;
+    color: #a82c48;
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;

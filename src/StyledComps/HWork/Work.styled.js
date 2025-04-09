@@ -29,10 +29,10 @@ export const WorkSteps = styled.div`
 `;
 
 export const WorkBox = styled.div`
-  background-color: white;
+//   background-color: white;
   padding: 20px;
 //   border-radius: 120px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 250px;
   transition: transform 0.3s ease;
 

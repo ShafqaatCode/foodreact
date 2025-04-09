@@ -52,7 +52,7 @@ export const FooterIconImage = styled.img`
 `;
 
 export const FooterCopywrite = styled.div`
-  color: white;
+  color: white !important; 
   text-align: center;
   margin-top: 20px;
   font-size: 1rem;
