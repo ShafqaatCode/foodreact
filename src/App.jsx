@@ -11,7 +11,8 @@ import Faq from './StyledComps/Faqs/Faqs';
 import Subscribe from './StyledComps/Subscribe/Subscribe';
 import Contact from './StyledComps/Contact/Contact';
 import Counter from './StyledComps/Counter/Counter';
-import Testimonial from './StyledComps/Testimonial/Testimonial';
+import Testimonial from './Components/Testimonial';
+
 
 
 
@@ -29,6 +30,7 @@ function App() {
      <Work />
      <Subscribe />
      <Faq />
+     <Testimonial />
      <Contact />
      <Footer />
      

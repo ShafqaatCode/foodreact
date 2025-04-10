@@ -1,4 +1,4 @@
-// components/Hero/Hero.jsx
+
 import React from 'react';
 import HeroImg  from '../../assets/Hero.jpg'
 import {

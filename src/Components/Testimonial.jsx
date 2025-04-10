@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-// Styled components for the Testimonial section
 const TestimonialSection = styled.section`
   background-color: #a82c48;
-  padding: 80px 20px 40px;
+  padding: 60px 20px 40px;
   text-align: center;
 `;
 
@@ -62,12 +61,12 @@ const Dot = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
   margin-bottom: 60px;
-//   text-transform: uppercase;
-//   letter-spacing: 3px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 `;
 
 const Testimonial = () => {
@@ -94,32 +93,28 @@ const Testimonial = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleDotClick = (index) => {
-    setCurrentIndex(index);
+    setActiveIndex(index);
   };
-
-  const { text, name } = testimonials[currentIndex];
 
   return (
     <TestimonialSection>
-      {/* Testimonial Title */}
-      <Title>Testimonial</Title>
-      
+      <Title>Testimonials</Title>
+
       <TestimonialContainer>
         <TestimonialCard>
-          {/* Dummy Icon */}
           <DummyIcon />
-          <TestimonialText>{text}</TestimonialText>
-          <TestimonialName>{name}</TestimonialName>
+          <TestimonialText>{testimonials[activeIndex].text}</TestimonialText>
+          <TestimonialName>{testimonials[activeIndex].name}</TestimonialName>
         </TestimonialCard>
-        {/* Dots Navigation */}
+
         <DotsContainer>
           {testimonials.map((_, index) => (
             <Dot
               key={index}
-              active={currentIndex === index}
+              active={activeIndex === index}
               onClick={() => handleDotClick(index)}
             />
           ))}
