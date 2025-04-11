@@ -1,18 +1,17 @@
-import React from 'react';
-import ContactImg from '../../assets/contact.jpg';
-import { StyledContact } from './Contact.styled';
+import React from "react";
+import ContactImg from "../../assets/contact.jpg";
+import { StyledContact } from "./Contact.styled";
 
 const Contact = () => {
   return (
-    <StyledContact id='contact'>
+    <StyledContact id="contact">
+      <h2 className="text-center text-3xl my-[40px] text-[#1f6dad] font-bold">Contact <span className="text-[#8c233b]">Us</span></h2>
       <div className="contact-container">
         <div className="left-img">
           <img src={ContactImg} alt="Contact" />
         </div>
         <div className="right-form">
           <form>
-            <h2>Contact Us</h2>
-
             <label htmlFor="name">Name</label>
             <input type="text" placeholder="Enter Your Name" />
 

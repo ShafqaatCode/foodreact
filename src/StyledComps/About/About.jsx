@@ -32,7 +32,7 @@ const About = () => {
           </Paragraph>
 
           <Paragraph>
-            It’s all about smart investing — save costs where you can, but never skimp on the essentials.
+            Its all about smart investing — save costs where you can, but never skimp on the essentials.
             Especially when it comes to equipment. Trust me, that matters long-term.
           </Paragraph>
 

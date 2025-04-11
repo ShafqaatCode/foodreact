@@ -12,6 +12,7 @@ import Subscribe from './StyledComps/Subscribe/Subscribe';
 import Contact from './StyledComps/Contact/Contact';
 import Counter from './StyledComps/Counter/Counter';
 import Testimonial from './Components/Testimonial';
+import StoryBoard from './StyledComps/StoryBoard/Storyboard';
 
 
 
@@ -28,6 +29,7 @@ function App() {
      <About2 />
      <ExploreFood />
      <Work />
+     <StoryBoard />
      <Subscribe />
      <Faq />
      <Testimonial />
