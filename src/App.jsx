@@ -27,11 +27,11 @@ function App() {
      <About />
      <Counter />
      <About2 />
-     <ExploreFood />
      <Work />
      <StoryBoard />
-     <Subscribe />
+     <ExploreFood />
      <Faq />
+     <Subscribe />
      <Testimonial />
      <Contact />
      <Footer />
