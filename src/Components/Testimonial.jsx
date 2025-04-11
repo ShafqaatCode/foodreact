@@ -37,7 +37,7 @@ const TestimonialName = styled.h5`
 `;
 
 const DummyIcon = styled.div`
-  background-color: #ddd;  // just a placeholder, maybe replace w/ real image later
+  background-color: #ddd;  
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -60,7 +60,7 @@ const Dot = styled.div`
   cursor: pointer;
   transition: background-color 0.3s;
 
-  // could add animation here for better UX later
+  
 `;
 
 const Title = styled.h2`
@@ -75,7 +75,7 @@ const Title = styled.h2`
 `;
 
 const Testimonial = () => {
-  // Probably extract this into a separate file if it grows too big
+ 
   const testimonials = [
     {
       text: "“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”",
@@ -102,16 +102,16 @@ const Testimonial = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const onDotClick = (index) => {
-    setActiveIndex(index); // Just updating the currently shown testimonial
+    setActiveIndex(index); 
   };
 
   return (
-    <TestimonialSection>
+    <TestimonialSection id='reviews'>
       <Title>Testimonials</Title>
 
       <TestimonialContainer>
         <TestimonialCard>
-          <DummyIcon /> {/* This is just a grey circle for now */}
+          <DummyIcon /> 
           <TestimonialText>
             {testimonials[activeIndex].text}
           </TestimonialText>

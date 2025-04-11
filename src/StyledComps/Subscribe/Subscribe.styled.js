@@ -22,7 +22,7 @@ export const StyledSubscribe = styled.section`
     }
 
     p {
-      color: #333333;
+      color: #333;
       margin: 10px 0;
     }
 

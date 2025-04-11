@@ -1,4 +1,4 @@
-import {React} from 'react';
+import { React } from 'react';
 import { StyledSubscribe } from './Subscribe.styled';
 
 const Subscribe = () => {
@@ -6,9 +6,10 @@ const Subscribe = () => {
     <StyledSubscribe>
       <div className="sub-content">
         <h1>
-          Hurry Up! <span>Subscribe</span> our <br /> newsletter and get 25% off
+          Hurry Up! <span>Subscribe</span> to our <br /> newsletter and get 25% off
         </h1>
-        <p>Limited time offer for this month. No credit card required.</p>
+        <p>No credit card required. Limited-time offer — just for this month!</p>
+
         <div className="btn">
           <input type="text" placeholder="Email Address Here" />
           <button>Subscribe</button>
