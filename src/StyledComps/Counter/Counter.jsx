@@ -43,11 +43,11 @@ const Counter = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCounts((prevCounts) =>
-        prevCounts.map((current, index) => {
-          const target = counterData[index].count;
-          const increment = Math.ceil(target / 100);
-          return current < target ? Math.min(current + increment, target) : current;
+      setCounts((prev) =>
+        prev.map((current, i) => {
+          const target = counterData[i].count;
+          const step = Math.ceil(target / 100);
+          return current < target ? Math.min(current + step, target) : current;
         })
       );
     }, 30);
@@ -58,9 +58,9 @@ const Counter = () => {
   return (
     <CounterSection>
       <div className="counter-container">
-        {counterData.map((item, index) => (
-          <div className="counter-box" key={index}>
-            <h2>{counts[index]}+</h2>
+        {counterData.map((item, i) => (
+          <div className="counter-box" key={i}>
+            <h2>{counts[i]}+</h2>
             <p>{item.text}</p>
           </div>
         ))}

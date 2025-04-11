@@ -30,7 +30,7 @@ export const FooterLink = styled.a`
   transition: color 0.3s ease;
 
   &:hover {
-    color: #ffdb00;
+    color: #ffdb00; // bright yellow hover – stands out
   }
 `;
 
@@ -47,12 +47,12 @@ export const FooterIconImage = styled.img`
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.1); /* Hover effect to enlarge icon */
+    transform: scale(1.1); 
   }
 `;
 
 export const FooterCopywrite = styled.div`
-  color: white !important; 
+  color: white !important;
   text-align: center;
   margin-top: 20px;
   font-size: 1rem;

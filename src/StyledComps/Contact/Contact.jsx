@@ -2,7 +2,6 @@ import React from 'react';
 import ContactImg from '../../assets/contact.jpg';
 import { StyledContact } from './Contact.styled';
 
-
 const Contact = () => {
   return (
     <StyledContact>
@@ -13,6 +12,7 @@ const Contact = () => {
         <div className="right-form">
           <form>
             <h2>Contact Us</h2>
+
             <label htmlFor="name">Name</label>
             <input type="text" placeholder="Enter Your Name" />
 

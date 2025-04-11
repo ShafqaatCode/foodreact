@@ -7,7 +7,7 @@ export const StyledContact = styled.section`
   .contact-container {
     display: flex;
     justify-content: center;
-    align-items: flex-center;
+    align-items: flex-start; 
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -43,10 +43,7 @@ export const StyledContact = styled.section`
         font-size: 28px;
         margin-bottom: 10px;
         font-weight: 700;
-        // border: 2px solid #1f6dad;
-        // position:absolute;
-        textalighn: center;
-      }
+        text-align: center; 
 
       label {
         font-weight: 500;
@@ -57,10 +54,10 @@ export const StyledContact = styled.section`
       input,
       textarea {
         border: none;
-            padding: 10px;
-            background-color: #fffafa;
-            width: 100%;
-            outline: none;
+        padding: 10px;
+        background-color: #fffafa;
+        width: 100%;
+        outline: none;
       }
 
       textarea {
@@ -80,8 +77,7 @@ export const StyledContact = styled.section`
         transition: all 0.3s ease;
 
         &:hover {
-        //   background-color: #155a99;
-        opacity: 0.8;
+          opacity: 0.8;
         }
       }
     }
