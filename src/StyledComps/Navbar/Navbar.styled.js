@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
   font-family: 'Poppins', sans-serif;
+  // feels like it fits the brand tone
 `;
 
 export const Nav = styled.nav`
@@ -15,17 +16,17 @@ export const Nav = styled.nav`
   left: 0;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   z-index: 1000;
 
   @media (max-width: 768px) {
-    padding: 10px 20px;
+    padding: 10px 20px; 
   }
 `;
 
 export const BrandLogo = styled.a`
   img {
-    height: 80px;
+    height: 80px; // might shrink on mobile later
   }
 `;
 
@@ -35,7 +36,7 @@ export const Hamburger = styled.div`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    display: block;
+    display: block; // Only show on mobile
   }
 `;
 
@@ -55,7 +56,7 @@ export const NavLinks = styled.ul`
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
-    display: ${({ open }) => (open ? 'flex' : 'none')};
+    display: ${({ open }) => (open ? 'flex' : 'none')}; // mobile menu toggle
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   }
 `;
@@ -69,7 +70,7 @@ export const NavLinkItem = styled.li`
     cursor: pointer;
 
     &:hover {
-      color: #a82c48;
+      color: #a82c48; 
     }
   }
 `;

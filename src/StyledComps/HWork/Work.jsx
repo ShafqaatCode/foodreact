@@ -1,30 +1,44 @@
 import React from 'react';
-import FoodEat from '../../assets/FoodEat.png';
-import { WorkSection, WorkContainer, WorkTitle, WorkSteps, WorkBox, WorkImage, WorkText } from './Work.styled';
+import FoodEat from '../../assets/FoodEat.png'; // I’ll replace this image later with unique ones maybe?
+
+// Styled Components - not all of these are final, still playing around
+import {
+  WorkSection,
+  WorkContainer,
+  WorkTitle,
+  WorkSteps,
+  WorkBox,
+  WorkImage,
+  WorkText
+} from './Work.styled';
 
 const Work = () => {
   return (
     <WorkSection>
       <WorkContainer>
         <WorkTitle>
-          How It <span>Works</span>
+          How It <span>Works</span> {/* Might update the span color later */}
         </WorkTitle>
+
         <WorkSteps>
           <WorkBox>
             <WorkImage src={FoodEat} alt="Choose your favourite food" />
             <WorkText>Choose your favourite food</WorkText>
           </WorkBox>
+
           <WorkBox>
             <WorkImage src={FoodEat} alt="Free and Fast delivery" />
             <WorkText>Free and Fast delivery</WorkText>
           </WorkBox>
+
           <WorkBox>
             <WorkImage src={FoodEat} alt="Easy Payment Method" />
             <WorkText>Easy Payment Method</WorkText>
           </WorkBox>
+
           <WorkBox>
-            <WorkImage src={FoodEat} alt="Easy Payment Method" />
-            <WorkText>Easy Payment Method</WorkText>
+            <WorkImage src={FoodEat} alt="Enjoy your meal" />
+            <WorkText>Enjoy your meal</WorkText> {/* Added a missing logical final step */}
           </WorkBox>
         </WorkSteps>
       </WorkContainer>

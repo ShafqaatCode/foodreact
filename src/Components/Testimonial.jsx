@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+
 const TestimonialSection = styled.section`
   background-color: #a82c48;
   padding: 60px 20px 40px;
@@ -36,7 +37,7 @@ const TestimonialName = styled.h5`
 `;
 
 const DummyIcon = styled.div`
-  background-color: #ddd;
+  background-color: #ddd;  // just a placeholder, maybe replace w/ real image later
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -54,22 +55,27 @@ const DotsContainer = styled.div`
 const Dot = styled.div`
   width: 12px;
   height: 12px;
-  border-radius: 50%;
+  border-radius: 50%; // classic pagination dot
   background-color: ${(props) => (props.active ? "#a82c48" : "#ddd")};
   cursor: pointer;
   transition: background-color 0.3s;
+
+  // could add animation here for better UX later
 `;
 
 const Title = styled.h2`
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
   color: white;
   margin-bottom: 60px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+
+  // Might uppercase this later for more impact
+  // text-transform: uppercase;
+  // letter-spacing: 3px;
 `;
 
 const Testimonial = () => {
+  // Probably extract this into a separate file if it grows too big
   const testimonials = [
     {
       text: "“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”",
@@ -95,8 +101,8 @@ const Testimonial = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleDotClick = (index) => {
-    setActiveIndex(index);
+  const onDotClick = (index) => {
+    setActiveIndex(index); // Just updating the currently shown testimonial
   };
 
   return (
@@ -105,17 +111,22 @@ const Testimonial = () => {
 
       <TestimonialContainer>
         <TestimonialCard>
-          <DummyIcon />
-          <TestimonialText>{testimonials[activeIndex].text}</TestimonialText>
-          <TestimonialName>{testimonials[activeIndex].name}</TestimonialName>
+          <DummyIcon /> {/* This is just a grey circle for now */}
+          <TestimonialText>
+            {testimonials[activeIndex].text}
+          </TestimonialText>
+          <TestimonialName>
+            {testimonials[activeIndex].name}
+          </TestimonialName>
         </TestimonialCard>
 
+        
         <DotsContainer>
-          {testimonials.map((_, index) => (
+          {testimonials.map((_, i) => (
             <Dot
-              key={index}
-              active={activeIndex === index}
-              onClick={() => handleDotClick(index)}
+              key={i}
+              active={activeIndex === i}
+              onClick={() => onDotClick(i)}
             />
           ))}
         </DotsContainer>

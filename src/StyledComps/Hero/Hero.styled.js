@@ -1,14 +1,14 @@
-// components/Hero/Hero.styled.js
 import styled from "styled-components";
 import bgImage from "../../assets/Hero.jpg"; // Adjust the path as necessary
 
 export const Section = styled.section`
   margin-top: 80px;
   padding: 100px 80px 60px 80px; /* Top padding accounts for fixed navbar */
-  //   background-color: #111;
   color: white;
   min-height: 100vh;
+
   background: url(${bgImage}) no-repeat center center/cover;
+
   @media (max-width: 768px) {
     padding: 100px 20px 40px;
   }
@@ -16,6 +16,8 @@ export const Section = styled.section`
   @media (max-width: 480px) {
     padding: 100px 15px 30px;
   }
+
+  
 `;
 
 export const Content = styled.div`

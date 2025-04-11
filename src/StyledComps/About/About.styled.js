@@ -7,7 +7,7 @@ export const Section = styled.section`
   padding: 60px 40px;
 
   @media (max-width: 768px) {
-    padding: 40px 20px;
+    padding: 40px 20px; 
   }
 `;
 
@@ -22,7 +22,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 30px;
+    gap: 30px; // less gap when stacked
   }
 `;
 
@@ -40,15 +40,16 @@ export const ImageWrapper = styled.div`
 
   @media (max-width: 768px) {
     justify-content: center;
+
     img {
-      width: 100%;
+      width: 100%; // take full width on mobile
     }
   }
 `;
 
 export const TextWrapper = styled.div`
   flex: 1;
-  padding: 20px;
+  padding: 20px; 
 `;
 
 export const Heading = styled.h2`
@@ -56,8 +57,7 @@ export const Heading = styled.h2`
   color: #1f6daf;
   text-transform: capitalize;
   margin-bottom: 20px;
-  font-weight:700;
-  
+  font-weight: 700;
 
   span {
     color: #a82c48;

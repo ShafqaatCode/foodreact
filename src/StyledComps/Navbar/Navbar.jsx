@@ -15,6 +15,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    
     setMenuOpen(prev => !prev);
   };
 
@@ -25,6 +26,7 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" />
         </BrandLogo>
 
+        
         <Hamburger onClick={toggleMenu}>☰</Hamburger>
 
         <NavLinks open={menuOpen}>
@@ -34,7 +36,11 @@ const Navbar = () => {
           <NavLinkItem><a href="#reviews">Reviews</a></NavLinkItem>
           <NavLinkItem><a href="#faq">FAQ</a></NavLinkItem>
           <NavLinkItem><a href="#contact">Contact</a></NavLinkItem>
-          <NavLinkItem><MainButton>1200 345 123</MainButton></NavLinkItem>
+
+          
+          <NavLinkItem>
+            <MainButton>1200 345 123</MainButton>
+          </NavLinkItem>
         </NavLinks>
       </Nav>
     </Header>

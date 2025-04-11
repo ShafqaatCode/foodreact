@@ -5,6 +5,8 @@ export const ExploreFoodSection = styled.section`
   align-items: center;
   justify-content: center;
   padding: 40px;
+
+  
 `;
 
 export const Wrapper = styled.div`
@@ -24,6 +26,7 @@ export const TextContent = styled.div`
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 110px;
+    line-height: 1.7; 
   }
 `;
 
@@ -41,7 +44,7 @@ export const Card = styled.div`
 
   img {
     border-radius: 20px;
-    width: 240px;
+    width: 240px; 
     transition: transform 0.3s ease;
     margin-bottom: 20px;
   }
@@ -60,15 +63,18 @@ export const CardContent = styled.div`
   }
 
   p {
-    //   border:2px solid red;
+    // border: 2px dashed #f00; 
     padding: 10px 0;
   }
 
   .rating {
     background-color: rgb(18, 218, 151);
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    margin: 90px 0;
+    // margin: 0px 0;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
   }
 
   .price {
@@ -78,6 +84,7 @@ export const CardContent = styled.div`
 
   .price del {
     color: #ccc;
+    margin-left: 10px;
   }
 `;
 
@@ -90,6 +97,7 @@ export const OrderButton = styled.button`
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  border-radius: 4px; // helps make it less boxy
 
   &:hover {
     background-color: white;

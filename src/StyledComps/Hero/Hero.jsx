@@ -1,6 +1,6 @@
-
 import React from 'react';
-import HeroImg  from '../../assets/Hero.jpg'
+import HeroImg from '../../assets/Hero.jpg'; 
+
 import {
   Section,
   Content,
@@ -16,15 +16,22 @@ const Hero = () => {
     <Section id="home">
       <Content>
         <Left>
-          <Heading>Delicious Healthy Recipes<br />From Family to Yours</Heading>
+          <Heading>
+            Delicious Healthy Recipes<br />
+            From Family to Yours
+          </Heading>
+
           <Paragraph>
-            As a food lover and a number cruncher, I've decided that cooking on a budget shouldn't mean canned beans and
-            ramen noodles night after night. Join me for delicious recipes designed for small budgets.
+            As a food lover *and* a number cruncher, I've realized that cooking on a budget doesn’t have to
+            mean canned beans every night. These recipes are budget-friendly and actually tasty.
           </Paragraph>
+
+          
           <OrderButton>Order Now →</OrderButton>
         </Left>
+
         <Right>
-         
+          
         </Right>
       </Content>
     </Section>

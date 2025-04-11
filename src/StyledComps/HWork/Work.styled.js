@@ -17,7 +17,7 @@ export const WorkTitle = styled.h2`
   margin-bottom: 40px;
 
   span {
-    color: #a82c48;
+    color: #a82c48; 
   }
 `;
 
@@ -25,35 +25,41 @@ export const WorkSteps = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 30px; // was 30, still seems fine
 `;
 
 export const WorkBox = styled.div`
-//   background-color: white;
+ 
+  /* background-color: white;
+  border-radius: 120px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+
   padding: 20px;
-//   border-radius: 120px;
-//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 250px;
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); // tiny nudge on hover
   }
 `;
 
 export const WorkImage = styled.img`
   width: 300px;
   height: 200px;
-  border-radius: 100%;
-//   padding: 20px;    
-//   height: 160px;
-  object-fit: cover;
-//   border-radius: 10px;
+  border-radius: 100%; // gives that circle look
+
+  object-fit: cover; // makes sure image doesn't stretch or squash
+
+  // keeping these for later possible tweaks
+  // padding: 20px;
+  // height: 160px;
+  // border-radius: 10px;
 `;
 
 export const WorkText = styled.p`
   margin-top: 15px;
-//   font-weight: bold;
   font-size: 1rem;
   color: #333;
+
+
 `;
