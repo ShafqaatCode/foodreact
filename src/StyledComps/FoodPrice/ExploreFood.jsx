@@ -13,7 +13,7 @@ import dosa from '../../assets/dosa.jpg';
 
 const ExploreFood = () => {
   return (
-    <ExploreFoodSection id="explore-food">
+    <ExploreFoodSection id="explore">
       <Wrapper>
         <div className="explore-container">
           <TextContent>

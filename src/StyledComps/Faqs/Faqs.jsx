@@ -29,7 +29,7 @@ const Faq = () => {
   ];
 
   return (
-    <FaqSection>
+    <FaqSection id ="faq">
       <Title>
         Frequently Asked <span>Questions</span>
       </Title>

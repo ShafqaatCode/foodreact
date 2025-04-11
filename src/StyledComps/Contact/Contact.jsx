@@ -4,7 +4,7 @@ import { StyledContact } from './Contact.styled';
 
 const Contact = () => {
   return (
-    <StyledContact>
+    <StyledContact id='contact'>
       <div className="contact-container">
         <div className="left-img">
           <img src={ContactImg} alt="Contact" />
