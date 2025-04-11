@@ -22,8 +22,7 @@ const Hero = () => {
           </Heading>
 
           <Paragraph>
-            As a food lover *and* a number cruncher, I've realized that cooking on a budget doesn’t have to
-            mean canned beans every night. These recipes are budget-friendly and actually tasty.
+          As a food lover and a number cruncher I've decided that cooking on a budget shouldn't mean canned beans and ramen noodles night after night. Join me for delicious recipes designed for small budgets. 
           </Paragraph>
 
           

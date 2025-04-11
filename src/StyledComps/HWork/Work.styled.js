@@ -39,7 +39,7 @@ export const WorkBox = styled.div`
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px); // tiny nudge on hover
+    // transform: translateY(-5px); 
   }
 `;
 
@@ -50,7 +50,10 @@ export const WorkImage = styled.img`
 
   object-fit: cover; // makes sure image doesn't stretch or squash
 
-  // keeping these for later possible tweaks
+  &:hover{
+  transform: scale(1.2); 
+  transition: transform 0.3s ease;
+  }
   // padding: 20px;
   // height: 160px;
   // border-radius: 10px;
@@ -60,6 +63,9 @@ export const WorkText = styled.p`
   margin-top: 15px;
   font-size: 1rem;
   color: #333;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
 
 
 `;

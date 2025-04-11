@@ -17,13 +17,13 @@ const Work = () => {
     <WorkSection>
       <WorkContainer>
         <WorkTitle>
-          How It <span>Works</span> {/* Might update the span color later */}
+          How It <span>Works</span> 
         </WorkTitle>
 
         <WorkSteps>
           <WorkBox>
             <WorkImage src={FoodEat} alt="Choose your favourite food" />
-            <WorkText>Choose your favourite food</WorkText>
+            <WorkText>Choose favourite food</WorkText>
           </WorkBox>
 
           <WorkBox>
@@ -38,7 +38,7 @@ const Work = () => {
 
           <WorkBox>
             <WorkImage src={FoodEat} alt="Enjoy your meal" />
-            <WorkText>Enjoy your meal</WorkText> {/* Added a missing logical final step */}
+            <WorkText>Enjoy your meal</WorkText> 
           </WorkBox>
         </WorkSteps>
       </WorkContainer>
